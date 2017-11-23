@@ -7,7 +7,7 @@ If you feel `- (void)addTarget:(id)target action:(SEL)action forControlEvents:(U
 ## Install
 
 ```
-pod install ELAutoSelector
+pod install
 ```
 
 ## Use
