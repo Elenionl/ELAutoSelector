@@ -23,9 +23,9 @@ Pod::Spec.new do |s|
   s.social_media_url   = "https://github.com/Elenionl"
   s.platform     = :ios, '7.0'
   s.source       = { :git => "https://github.com/Elenionl/ELAutoSelector.git", :tag => "#{s.version}" }
-  s.source_files  = "ELAutoSelectorHelper/*.swift"
+  s.source_files  = "ELAutoSelectorHelper/*"
   s.requires_arc = true
-  s.frameworks = 'Foundition'
+  s.frameworks = 'Foundation'
 end
 # pod spec lint ELAutoSelector.podspec
 # pod trunk push ELAutoSelector.podspec
