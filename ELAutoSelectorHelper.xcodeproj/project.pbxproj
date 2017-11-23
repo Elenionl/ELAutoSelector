@@ -84,6 +84,7 @@
 		2C34A7FF1FC563E700AC6B50 = {
 			isa = PBXGroup;
 			children = (
+				2C77EF0B1FC6B69F00B86C33 /* Demo */,
 				2C34A80A1FC563E700AC6B50 /* ELAutoSelectorHelper */,
 				2C34A8231FC563E800AC6B50 /* ELAutoSelectorHelperTests */,
 				2C34A82E1FC563E800AC6B50 /* ELAutoSelectorHelperUITests */,
@@ -104,17 +105,8 @@
 		2C34A80A1FC563E700AC6B50 /* ELAutoSelectorHelper */ = {
 			isa = PBXGroup;
 			children = (
-				2C34A80B1FC563E700AC6B50 /* AppDelegate.h */,
-				2C34A80C1FC563E700AC6B50 /* AppDelegate.m */,
-				2C34A80E1FC563E700AC6B50 /* ViewController.h */,
-				2C34A80F1FC563E700AC6B50 /* ViewController.m */,
 				2C34A83D1FC5640200AC6B50 /* ELAutoSelectorHelper.h */,
 				2C34A83E1FC5640200AC6B50 /* ELAutoSelectorHelper.m */,
-				2C34A8111FC563E700AC6B50 /* Main.storyboard */,
-				2C34A8141FC563E700AC6B50 /* Assets.xcassets */,
-				2C34A8161FC563E700AC6B50 /* LaunchScreen.storyboard */,
-				2C34A8191FC563E700AC6B50 /* Info.plist */,
-				2C34A81A1FC563E700AC6B50 /* main.m */,
 			);
 			path = ELAutoSelectorHelper;
 			sourceTree = "<group>";
@@ -135,6 +127,30 @@
 				2C34A8311FC563E800AC6B50 /* Info.plist */,
 			);
 			path = ELAutoSelectorHelperUITests;
+			sourceTree = "<group>";
+		};
+		2C77EF0B1FC6B69F00B86C33 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				2C77EF0C1FC6B6B000B86C33 /* SupportingFiles */,
+				2C34A80B1FC563E700AC6B50 /* AppDelegate.h */,
+				2C34A80C1FC563E700AC6B50 /* AppDelegate.m */,
+				2C34A80E1FC563E700AC6B50 /* ViewController.h */,
+				2C34A80F1FC563E700AC6B50 /* ViewController.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		2C77EF0C1FC6B6B000B86C33 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2C34A8111FC563E700AC6B50 /* Main.storyboard */,
+				2C34A8141FC563E700AC6B50 /* Assets.xcassets */,
+				2C34A8161FC563E700AC6B50 /* LaunchScreen.storyboard */,
+				2C34A8191FC563E700AC6B50 /* Info.plist */,
+				2C34A81A1FC563E700AC6B50 /* main.m */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -438,7 +454,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TV2WRE6V8Z;
-				INFOPLIST_FILE = ELAutoSelectorHelper/Info.plist;
+				INFOPLIST_FILE = Demo/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elenion.ELAutoSelectorHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -452,7 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TV2WRE6V8Z;
-				INFOPLIST_FILE = ELAutoSelectorHelper/Info.plist;
+				INFOPLIST_FILE = Demo/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elenion.ELAutoSelectorHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";

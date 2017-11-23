@@ -56,7 +56,7 @@
     self = [super init];
     if (self) {
         _impDic = [NSMutableDictionary new];
-        _timer = [NSTimer scheduledTimerWithTimeInterval:30 target:self selector:@selector(disposeResources) userInfo:nil repeats:true];
+        _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(disposeResources) userInfo:nil repeats:true];
         _lock = [[NSLock alloc] init];
     }
     return self;
@@ -86,20 +86,25 @@
         class_addMethod([self class], sel, imp_implementationWithBlock(set.action), "v@:@");
     }
     else {
-        ELAutoSelectorAction voidAction = ELTarget.voidAction;
-        class_addMethod([self class], sel, imp_implementationWithBlock(voidAction), "v@:@");
+        
+        class_addMethod([self class], sel, ELTarget.voidAction, "v@:@");
     }
     return true;
 }
 
 - (void)voidAction:(id)sender {
-    
+#ifdef DEBUG
+    NSLog(@"Warnning from ELAutoSelector: PlaceHolder IMP Called by %@, place double check.", sender);
+#endif
 }
 
-- (ELAutoSelectorAction)voidAction {
+- (IMP)voidAction {
     ELAutoSelectorAction voidAction = ^void(id _self, id sender) {
+#ifdef DEBUG
+        NSLog(@"Warnning from ELAutoSelector: PlaceHolder IMP Called by %@, place double check.", sender);
+#endif
     };
-    return voidAction;
+    return imp_implementationWithBlock(voidAction);
 }
 
 - (void)disposeResources {
@@ -110,6 +115,7 @@
             SEL sel = NSSelectorFromString(key);
             IMP imp = [self methodForSelector:sel];
             imp_removeBlock(imp);
+            class_replaceMethod([self class], sel, ELTarget.voidAction, "v@:@");
             [_impDic removeObjectForKey:key];
         }
     }
