@@ -15,6 +15,7 @@
 		2C34A81B1FC563E700AC6B50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C34A81A1FC563E700AC6B50 /* main.m */; };
 		2C34A8251FC563E800AC6B50 /* ELAutoSelectorHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C34A8241FC563E800AC6B50 /* ELAutoSelectorHelperTests.m */; };
 		2C34A8301FC563E800AC6B50 /* ELAutoSelectorHelperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C34A82F1FC563E800AC6B50 /* ELAutoSelectorHelperUITests.m */; };
+		2C34A83F1FC5640200AC6B50 /* ELAutoSelectorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C34A83E1FC5640200AC6B50 /* ELAutoSelectorHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		2C34A82B1FC563E800AC6B50 /* ELAutoSelectorHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ELAutoSelectorHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C34A82F1FC563E800AC6B50 /* ELAutoSelectorHelperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELAutoSelectorHelperUITests.m; sourceTree = "<group>"; };
 		2C34A8311FC563E800AC6B50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C34A83D1FC5640200AC6B50 /* ELAutoSelectorHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELAutoSelectorHelper.h; sourceTree = "<group>"; };
+		2C34A83E1FC5640200AC6B50 /* ELAutoSelectorHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELAutoSelectorHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				2C34A80C1FC563E700AC6B50 /* AppDelegate.m */,
 				2C34A80E1FC563E700AC6B50 /* ViewController.h */,
 				2C34A80F1FC563E700AC6B50 /* ViewController.m */,
+				2C34A83D1FC5640200AC6B50 /* ELAutoSelectorHelper.h */,
+				2C34A83E1FC5640200AC6B50 /* ELAutoSelectorHelper.m */,
 				2C34A8111FC563E700AC6B50 /* Main.storyboard */,
 				2C34A8141FC563E700AC6B50 /* Assets.xcassets */,
 				2C34A8161FC563E700AC6B50 /* LaunchScreen.storyboard */,
@@ -265,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C34A83F1FC5640200AC6B50 /* ELAutoSelectorHelper.m in Sources */,
 				2C34A8101FC563E700AC6B50 /* ViewController.m in Sources */,
 				2C34A81B1FC563E700AC6B50 /* main.m in Sources */,
 				2C34A80D1FC563E700AC6B50 /* AppDelegate.m in Sources */,
