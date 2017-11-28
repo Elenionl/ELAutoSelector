@@ -7,7 +7,7 @@ If you feel `- (void)addTarget:(id)target action:(SEL)action forControlEvents:(U
 ## Install
 
 ```
-pod 'ELAutoSelector', '~> 1.0'
+pod 'ELAutoSelector', '~> 1.0.2'
 ```
 ```
 pod install
