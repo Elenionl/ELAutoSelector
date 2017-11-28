@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ELAutoSelector"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "A light-weight tool helps developers use block for 'target action' kind methods"
   s.description  = <<-DESC
   If you feel `- (void)addTarget:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents;` is too complex to use, try ELAutoSelector.
