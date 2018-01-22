@@ -1,5 +1,12 @@
 # ELAutoSelector
 
+[![Build Status](https://travis-ci.org/Elenionl/ELAutoSelector.svg?branch=master)](https://travis-ci.org/Elenionl/ELAutoSelector)
+[![Apps Using](https://img.shields.io/cocoapods/at/ELAutoSelector.svg?label=Apps%20Using%20ELAutoSelector&colorB=28B9FE)](http://cocoapods.org/pods/ELAutoSelector)
+[![Downloads](https://img.shields.io/cocoapods/dt/ELAutoSelector.svg?label=Total%20Downloads&colorB=28B9FE)](http://cocoapods.org/pods/ELAutoSelector)
+[![CocoaPods](https://img.shields.io/cocoapods/v/ELAutoSelector.svg?style=flat)](https://cocoapods.org/pods/ELAutoSelector)
+[![CocoaPods](https://img.shields.io/cocoapods/l/ELAutoSelector.svg?style=flat)](https://cocoapods.org/pods/ELAutoSelector)
+[![iOS 9.0](https://img.shields.io/badge/iOS-7.0-blue.svg)](https://github.com/Elenionl/ELAutoSelector)
+
 
 Change *target* *action* into **blocks**
 
